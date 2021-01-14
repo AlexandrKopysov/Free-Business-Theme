@@ -1,0 +1,115 @@
+
+.top__header{
+    display: flex;
+    height: 90px;
+    font-size: 13.5px;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 40px;
+    }
+
+    menu{
+        a {
+            margin-right: 20px;
+            background: none;
+            padding: 10px;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        a:hover {
+            background: #ffbb42;
+            color: #fff7ec;
+        }
+        a:last-child {
+            margin-right:0px;
+        }
+    }
+}
+
+.header {
+
+    &__main {
+        display: block;
+        width: 100%;
+        height: 480px;
+        background: #709dca;
+        padding-top: 110px;
+        text-align: center;
+        div{
+            color: #fff7ec;
+        }        
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-size: 35px;
+        font-family: 'Roboto-bold', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: 'Roboto-light', sans-serif;
+        margin-bottom: 35px;
+    }
+
+    &__inpit-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__input-group {
+        display: flex;
+        // max-width: 100%;
+        width: 280px;
+        .input {
+            &__div-img {
+                height: 48px;
+                background-color: #fff;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px 0 0 3px;
+            }
+    
+            &__img {
+                height:15px; 
+                width:15px; 
+            }
+    
+            &__input {
+                border: none;
+                outline: none;
+                border-radius: 0 3px 3px 0;     
+                width: 100%;           
+            }
+        }
+    }
+    &__input-group:first-child {
+        margin-left: 40px;
+    }    
+     
+    &__input-button{
+        button{
+            border: none;
+            outline: none;
+            height: 48px;
+            width: 210px;
+            font-family: 'Roboto-light', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff7ec;
+            background-color: #ffbb42;
+            border-radius: 3px;
+            margin-right: 40px;
+        }
+    }
+    &__slider{
+        margin-top: 70px;
+    }
+}
+
