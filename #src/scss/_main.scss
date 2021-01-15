@@ -1,5 +1,6 @@
 .main {
     margin-top: 200px;
+    margin-bottom: 150px;
     &__services-title {
         text-align: center;
         h2{
@@ -10,6 +11,7 @@
         p{
             margin: 0;
             font-size: 16px;
+            margin-bottom: 90px;
         }
     }
 
@@ -22,8 +24,11 @@
 .services {
     &__global-group {
         display: flex;
-        margin-top: 100px;
-        justify-content: space-between;    
+        margin-bottom: 85px;        
+        justify-content: space-between; 
+        :last-child{
+            margin-bottom: 0;
+        }   
     }
 
     &__group {
@@ -45,6 +50,7 @@
         h3{
             font-size: 16px;
             font-weight: bold;
+            text-transform: uppercase;
         }
         p{
             font-size: 13px;
@@ -53,6 +59,168 @@
         }
     }
 }
+.about {
+    height: 650px;
+    display: flex;
+    &__img {
+        background-image: url("../img/About\ Us_Img.png");
+        background-size: 100%;        
+        width: 50%;
+        
+    }
+
+    &__text-phone {
+        width: 50%;
+        background-color:#ffc155;
+    }
+    &__text-container {
+        width: 55%;
+        padding: 160px 0 0 80px;
+        color: #ffffff;        
+        h2{
+            font-size: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        p{
+            margin: 0;
+            font-size: 13px;
+            color: #ffffff;
+            line-height: 1.5;
+            letter-spacing: 0.8px;
+            margin-bottom: 40px;
+        }        
+
+        a{
+            color: #ffffff;
+            text-transform: uppercase;        
+            font-size: 14px;            
+        }                
+    }
+    &__button{
+        text-align: center;        
+        height: 45px;
+        width: 145px;
+        border: 2px solid #e7ad48;
+        display: flex;
+        justify-content: center;
+        align-items: center;                   
+    }
+    &__button:hover{
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        a{
+            color: #868686;
+        }
+    }
+}
+
+.choose-price {
+    width: 100%;
+    background-color: #e7edf3;
+    padding-top: 135px;
+    padding-bottom: 135px;
+    // padding: 135px auto; 
+    text-align: center;
+    &__row-card {
+        display: flex;
+    }
+}
+
+.title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.subtitle {
+    margin-bottom: 80px;
+    font-size: 18px;
+}
+.card {
+    background-color:white;
+    text-align: center;
+    // height: 440px;
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 3px;
+    border: 1px solid #b5bbc1;
+    margin: 30px auto;
+    &__title {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 35px;
+    }
+
+    &__row-price {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__params {
+        text-transform: uppercase;
+        font-size: 14px;
+        border-top: 1px solid #b5bbc1;
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }    
+
+    &__button {
+        // margin-top: 35px;
+        margin: 35px auto auto auto;
+        background-color: #ffbb42;
+        height: 40px;
+        width: 130px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        a{
+            font-size: 14px;
+            color:white;
+            text-transform: uppercase;
+        }
+    }
+    &__button:hover{
+        cursor: pointer;
+
+    }
+
+    p{
+        margin: -5px 0 35px 0;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+.check{
+    background-color:#709dca;
+    padding: 85px 30px;
+    margin : 0 auto;
+    color: white;
+}
+
+.dollar {
+    margin-top: 10px;
+    transform: rotate(5deg);
+    &__img {
+        height: 32px;
+        width: 32px;
+        fill: #ffbb42;
+    }
+}
+.price {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffbb42;
+}
+
+
+
+
+
 
 
 

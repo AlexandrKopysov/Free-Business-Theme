@@ -161,6 +161,7 @@ h6 {
 
 .main {
   margin-top: 200px;
+  margin-bottom: 150px;
 }
 
 .main__services-title {
@@ -176,6 +177,7 @@ h6 {
 .main__services-title p {
   margin: 0;
   font-size: 16px;
+  margin-bottom: 90px;
 }
 
 .main__services-row {
@@ -189,10 +191,14 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 100px;
+  margin-bottom: 85px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.services__global-group :last-child {
+  margin-bottom: 0;
 }
 
 .services__group {
@@ -220,12 +226,203 @@ h6 {
 .services__text h3 {
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .services__text p {
   font-size: 13px;
   line-height: 1.5;
   letter-spacing: 0.8px;
+}
+
+.about {
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__img {
+  background-image: url("../img/About Us_Img.png");
+  background-size: 100%;
+  width: 50%;
+}
+
+.about__text-phone {
+  width: 50%;
+  background-color: #ffc155;
+}
+
+.about__text-container {
+  width: 55%;
+  padding: 160px 0 0 80px;
+  color: #ffffff;
+}
+
+.about__text-container h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about__text-container p {
+  margin: 0;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  margin-bottom: 40px;
+}
+
+.about__text-container a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.about__button {
+  text-align: center;
+  height: 45px;
+  width: 145px;
+  border: 2px solid #e7ad48;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__button:hover {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.about__button:hover a {
+  color: #868686;
+}
+
+.choose-price {
+  width: 100%;
+  background-color: #e7edf3;
+  padding-top: 135px;
+  padding-bottom: 135px;
+  text-align: center;
+}
+
+.choose-price__row-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin-bottom: 80px;
+  font-size: 18px;
+}
+
+.card {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 3px;
+  border: 1px solid #b5bbc1;
+  margin: 30px auto;
+}
+
+.card__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.card__row-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__params {
+  text-transform: uppercase;
+  font-size: 14px;
+  border-top: 1px solid #b5bbc1;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card__button {
+  margin: 35px auto auto auto;
+  background-color: #ffbb42;
+  height: 40px;
+  width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+}
+
+.card__button a {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.card__button:hover {
+  cursor: pointer;
+}
+
+.card p {
+  margin: -5px 0 35px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.check {
+  background-color: #709dca;
+  padding: 85px 30px;
+  margin: 0 auto;
+  color: white;
+}
+
+.dollar {
+  margin-top: 10px;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.dollar__img {
+  height: 32px;
+  width: 32px;
+  fill: #ffbb42;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffbb42;
 }
 
 @font-face {
@@ -239,4 +436,8 @@ h6 {
 .container {
   max-width: 1170px;
   margin: auto;
+}
+
+.webp .about__img {
+  background-image: url("../img/About Us_Img.png");
 }
